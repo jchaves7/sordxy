@@ -9,9 +9,9 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 64px;
     color: #4285f4;
-    margin: 50px 0 20px;
+    margin: 40px 0 20px;
     text-align: center;
 }
 
@@ -19,30 +19,31 @@ h1 {
     display: flex;
     align-items: center;
     background: #fff;
-    padding: 12px 20px;
-    border-radius: 30px;
+    padding: 14px 24px;
+    border-radius: 50px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     margin-bottom: 30px;
     width: 95%;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .search-box input {
     border: none;
     outline: none;
-    font-size: 22px;
+    font-size: 26px;
     width: 100%;
-    padding: 12px 15px;
+    padding: 18px 20px;
+    border-radius: 50px;
 }
 
 .search-box button {
     border: none;
     background: #4285f4;
     color: white;
-    padding: 12px 24px;
-    font-size: 22px;
-    border-radius: 30px;
-    margin-left: 15px;
+    padding: 16px 30px;
+    font-size: 24px;
+    border-radius: 50px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
@@ -53,7 +54,7 @@ h1 {
 .result-item {
     background: white;
     width: 95%;
-    max-width: 1400px;
+    max-width: 1000px;
     padding: 30px;
     margin: 30px auto;
     border-radius: 20px;
@@ -63,7 +64,7 @@ h1 {
 
 .result-item h3 {
     margin: 0;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .result-item h3 a {
@@ -76,7 +77,7 @@ h1 {
 }
 
 .result-item .url a {
-    font-size: 16px;
+    font-size: 18px;
     color: #006621;
     text-decoration: none;
 }
@@ -86,7 +87,7 @@ h1 {
 }
 
 .result-item p {
-    font-size: 18px;
+    font-size: 20px;
     color: #545454;
     margin-top: 8px;
 }
@@ -101,11 +102,12 @@ h1 {
 .filter-btn {
     background: #fff;
     border: 1px solid #ddd;
-    padding: 10px 16px;
-    margin: 6px;
-    border-radius: 20px;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    transition: background 0.3s;
 }
 
 .filter-btn:hover {
@@ -116,39 +118,40 @@ h1 {
 /* 💥 MEDIA QUERIES PARA MÓVIL */
 @media (max-width: 600px) {
     h1 {
-        font-size: 42px;
+        font-size: 48px;
         margin: 30px 0 20px;
     }
     .search-box {
         flex-direction: column;
-        padding: 15px;
+        padding: 16px;
     }
     .search-box input {
-        font-size: 20px;
-        margin-bottom: 10px;
-        padding: 14px;
+        font-size: 24px;
+        margin-bottom: 12px;
+        padding: 16px;
     }
     .search-box button {
         width: 100%;
         margin-left: 0;
-        font-size: 20px;
-        padding: 14px;
+        font-size: 24px;
+        padding: 16px;
     }
     .filter-btn {
-        font-size: 18px;
-        padding: 12px 20px;
-        margin: 8px 5px;
+        font-size: 20px;
+        padding: 14px 28px;
+        margin: 6px;
     }
     .result-item {
-        padding: 20px;
+        padding: 24px;
     }
     .result-item h3 {
-        font-size: 22px;
+        font-size: 24px;
     }
     .result-item .url a {
-        font-size: 14px;
-    }
-    .result-item p {
         font-size: 16px;
     }
+    .result-item p {
+        font-size: 18px;
+    }
 }
+
