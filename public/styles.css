@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background: #f8f9fa;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@ body {
 h1 {
     font-size: 64px;
     color: #4285f4;
-    margin: 40px 0 20px;
+    margin: 30px 0 20px;
     text-align: center;
 }
 
@@ -19,11 +19,11 @@ h1 {
     display: flex;
     align-items: center;
     background: #fff;
-    padding: 14px 24px;
+    padding: 16px 24px;
     border-radius: 50px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    margin-bottom: 30px;
-    width: 95%;
+    margin-bottom: 20px;
+    width: 100%;
     max-width: 700px;
 }
 
@@ -53,10 +53,10 @@ h1 {
 
 .result-item {
     background: white;
-    width: 95%;
+    width: 100%;
     max-width: 1000px;
     padding: 30px;
-    margin: 30px auto;
+    margin: 20px auto;
     border-radius: 20px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
     text-align: left;
@@ -102,11 +102,11 @@ h1 {
 .filter-btn {
     background: #fff;
     border: 1px solid #ddd;
-    padding: 12px 24px;
-    margin: 8px;
+    padding: 14px 28px;
+    margin: 6px;
     border-radius: 30px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     transition: background 0.3s;
 }
 
@@ -117,41 +117,43 @@ h1 {
 
 /* 💥 MEDIA QUERIES PARA MÓVIL */
 @media (max-width: 600px) {
+    body {
+        padding: 0 12px;
+    }
     h1 {
-        font-size: 48px;
-        margin: 30px 0 20px;
+        font-size: 50px;
+        margin: 20px 0 15px;
     }
     .search-box {
         flex-direction: column;
         padding: 16px;
     }
     .search-box input {
-        font-size: 24px;
+        font-size: 26px;
         margin-bottom: 12px;
-        padding: 16px;
+        padding: 18px;
     }
     .search-box button {
         width: 100%;
         margin-left: 0;
-        font-size: 24px;
-        padding: 16px;
+        font-size: 26px;
+        padding: 18px;
     }
     .filter-btn {
-        font-size: 20px;
-        padding: 14px 28px;
+        font-size: 22px;
+        padding: 16px 30px;
         margin: 6px;
     }
     .result-item {
         padding: 24px;
     }
     .result-item h3 {
-        font-size: 24px;
+        font-size: 26px;
     }
     .result-item .url a {
-        font-size: 16px;
+        font-size: 18px;
     }
     .result-item p {
         font-size: 18px;
     }
 }
-
