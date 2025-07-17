@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sordaxy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sordaxy</h1>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Buscar...">
+        <button id="searchBtn">Buscar</button>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn" data-filter="all">🔎 Todo</button>
+        <button class="filter-btn" data-filter="facebook">🔵 Facebook</button>
+        <button class="filter-btn" data-filter="youtube">🔴 YouTube</button>
+        <button class="filter-btn" data-filter="instagram">🟣 Instagram</button>
+        <button class="filter-btn" data-filter="tiktok">⚫ TikTok</button>
+    </div>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
