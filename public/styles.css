@@ -51,18 +51,18 @@ h1 {
 
 .result-item {
     background: white;
-    width: 95%;               /* ocupa casi todo el ancho disponible */
-    max-width: 1400px;        /* hasta 1400px en pantallas grandes */
-    padding: 40px;            /* mucho espacio interno */
-    margin: 40px auto;        /* centro horizontal y espacio abajo */
-    border-radius: 20px;      /* esquinas suaves */
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2); /* sombra elegante */
+    width: 95%;
+    max-width: 1400px;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
     text-align: left;
 }
 
 .result-item h3 {
     margin: 0;
-    font-size: 32px;          /* título grande */
+    font-size: 32px;
 }
 
 .result-item h3 a {
@@ -75,7 +75,7 @@ h1 {
 }
 
 .result-item .url a {
-    font-size: 18px;          /* url más grande */
+    font-size: 18px;
     color: #006621;
     text-decoration: none;
 }
@@ -85,12 +85,16 @@ h1 {
 }
 
 .result-item p {
-    font-size: 20px;          /* descripción cómoda de leer */
+    font-size: 20px;
     color: #545454;
     margin-top: 8px;
 }
+
 .filters {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .filter-btn {
@@ -106,4 +110,37 @@ h1 {
 .filter-btn:hover {
     background: #4285f4;
     color: white;
+}
+
+/* 💥 MEDIA QUERIES PARA MÓVIL */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+    .search-box {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .search-box input {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .search-box button {
+        width: 100%;
+        margin-left: 0;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .result-item {
+        padding: 20px;
+    }
+    .result-item h3 {
+        font-size: 24px;
+    }
+    .result-item .url a {
+        font-size: 14px;
+    }
+    .result-item p {
+        font-size: 16px;
+    }
 }
